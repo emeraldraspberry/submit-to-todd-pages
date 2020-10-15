@@ -36,9 +36,9 @@ header {
   object-fit: contain;
 
   background-color: #046B;
-  border: 0.125rem;
+  border: 0.1rem;
   border-radius: 0.33rem;
-  border-style: ridge;
+  border-style: solid;
   border-color: black;
   z-index: 1;
 }
@@ -64,9 +64,9 @@ main {
   width: 80%;
   margin-top: 1rem;
 
-  border: 0.125rem;
+  border: 0.1rem;
   border-radius: 0.33rem;
-  border-style: ridge;
+  border-style: solid;
   border-color: black;
 
   background-color: #0467;
@@ -77,9 +77,9 @@ section {
   margin: 1rem;
   padding: 0rem 2rem 0rem 2rem;
 
-  border: 0.125rem;
+  border: 0.1rem;
   border-radius: 0.33rem;
-  border-style: ridge;
+  border-style: solid;
   border-color: black;
 }
 section > div {
