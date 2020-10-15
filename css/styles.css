@@ -1,8 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 html {
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  font-family: 'Quicksand', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: linear-gradient(180deg, #024, #000);
+  color: #EEE;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+body {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: contain;
+
+  background-color: #046B;
+  border: 0.125rem;
+  border-radius: 0.33rem;
+  border-style: ridge;
+  border-color: black;
+  z-index: 1;
+}
+header > img {
+  position: absolute;
+  max-width: 100%;
+  z-index: -2;
+}
+header > .header-bg {
+  position: absolute;
+  box-shadow: 0 0 8px 8px #0000 inset;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #046B;
+  backdrop-filter: blur(0.125rem);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 1rem;
+
+  border: 0.125rem;
+  border-radius: 0.33rem;
+  border-style: ridge;
+  border-color: black;
+
+  background-color: #0467;
+  backdrop-filter: blur(0.1rem);
+}
+section {
+  width: 98%;
+  margin: 1rem;
+  padding: 0rem 2rem 0rem 2rem;
+
+  border: 0.125rem;
+  border-radius: 0.33rem;
+  border-style: ridge;
+  border-color: black;
+}
+section > div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+section > div > img {
+  max-width: 100%;
+  padding-right: 1rem;
+}
+header > h1:first-of-type {
+  font-size: 3rem;
+  margin: 0.8rem 0rem 0.2rem 0rem;
+}
+header > h2:last-of-type {
+  font-size: 2rem;
+  margin: 0.2rem 0rem 0.8rem 0rem;
+}
+header > h1, h2 {
+  font-kerning: auto ;
+  font-weight: bold;
+  text-shadow: 0.05rem 0.05rem 0.5rem black;
+}
+p {
+  font-size: 1.1rem;
+}
+ul, ol {
+  list-style-type: square;
+  font-size: 1.25rem;
+}
+li {
+  font-size: 1.05rem;
+}
+* > hr {
+  width: 95%;
+}
+div + p {
+  margin: 0rem 0rem 1rem 0rem;
+}
+.p-title {
+  color: #FFD;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0.25rem 0.125rem 0.75rem black;
+}
+.p-lessertitle {
+  color: #FFE;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0.25rem 0.125rem 0.75rem black;
+}
+.p-summary {
+  font-size: 1.2rem;
+}
+.p-bold {
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-shadow: 0.25rem 0.125rem 0.8rem #012;
+}
+.p-hint {
+  display: block;
+  background-color: #0227;
+  border-width: 0.125rem;
+  border-style: solid;
+  border-color: #777;
+  border-radius: 1rem;
+  max-width: max-content;
+
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  word-break: keep-all;
+  white-space: normal;
+  color: #ccc;
+  font-size: 1rem;
+  font-style: italic;
+}
+.p-oldchange {
+  color: #999;
+  text-decoration: line-through;
+  text-shadow: 0.01rem 0.01rem 0.4rem #222;
+}
+.p-newchange {
+  font-weight: 600;
+}
+.ul-changelist {
+  margin-top: 0rem;
+}
+.ul-changelist > li {
+  margin-left: 2.5rem;
 }

@@ -8,13 +8,97 @@
 </head>
 <body>
   <header>
-    <p>Submit to Todd</p>
-    <p>Minecraft Portal</p>
+    <img src="./res/banner.png" alt="Minecraft banner">
+    <div class="header-bg"></div>
+    <h1>Submit to Todd</h1>
+    <h2>Minecraft Portal</h2>
   </header>
   <nav></nav>
   <main>
     <section>
-      <p>Patch Notes 0.10.14</p>
+      <p class="p-title">Patch Notes 0.10.15</p>
+      <p class="p-summary">With mcMMO, BetterEnchantments, and BuildersWand
+        being recently implemented, there has been a concensus on what needs to
+        be balanced. Sorry kiddos!
+      </p>
+      <p class="p-lessertitle">>> New Plugins!</p>
+      <section>
+        <div><img src="./res/cs.png" alt="ChestSort Image">
+        <p class="p-bold">ChestSort</p></div>
+        <p>Automatically sorts items in your chest and inventory!</p>
+      </section>
+      <section>
+        <div><img src="./res/et.png" alt="ExperienceTome Image">
+        <p class="p-bold">ExperienceTome</p></div>
+        <p>Store your base experience onto the Tome of Experience for use at a
+          later date!
+        </p>
+      </section>
+      <p class="p-lessertitle">>> Plugin Changes</p>
+      <section>
+        <div><img src="./res/be.png" alt="BetterEnchantments Image">
+          <p class="p-bold">BetterEnchantments</p></div>
+        <p>Essences dropped way too frequently to the point of cluttering
+            inventories, so they were quickly a nuisance. Increasing drop chances
+            will help curb this problem while still being potentially awarding.
+        </p>
+        <ul class="ul-changelist">
+        Essences
+        <p class="p-hint">Drop chances are calculated by the formula of 1/n,
+          so there will be a 0.5% chance of receiving a common essence upon 
+          breaking a block
+        </p>
+        <li>Common drop chance: <span class="p-oldchange">20</span>
+           <span class="p-newchange">--> 200</span></li>
+        <li>Uncommon drop chance: <span class="p-oldchange">40</span>
+           <span class="p-newchange">--> 500</span></li>
+        <li>Rare drop chance: <span class="p-oldchange">75</span>
+           <span class="p-newchange">--> 800</span></li>
+        <li>Epic drop chance: <span class="p-oldchange">120</span>
+           <span class="p-newchange">--> 1000</span></li>
+        <li>Legendary drop chance: <span class="p-oldchange">200</span>
+           <span class="p-newchange">--> 1200</span></li>
+        <li>Mythic drop chance: <span class="p-oldchange">500</span>
+           <span class="p-newchange">--> 1250</span></li>
+        <li>Ascended drop chance: <span class="p-oldchange">10000</span>
+           <span class="p-newchange">--> 1500</span></li>
+        </ul>
+      </section>
+      
+      <section>
+        <div><img src="./res/bw.png" alt="BuildersWand Image">
+          <p class="p-bold">BuildersWand</p>
+        </div>
+        <p>The Builders Wand should at least be durable enough to last for its 
+          intended purpose as a project builder tool.
+        </p>
+        <ul class="ul-changelist">
+        Builders Wand
+        <li>Item durability: <span class="p-oldchange">130</span>
+          <span class="p-newchange">--> 390</span> (1/4 of a diamond tool)</li>
+        </ul>
+      </section>
+      
+      <section>
+        <div><img src="./res/mcmmo.png" alt="mcMMO Image">
+          <p class="p-bold">mcMMO</p>
+        </div>
+        <p>Leveling proves to be unfun and time-consuming for woodcutters and
+          fishers.
+        </p>
+        <ul class="ul-changelist">
+          Woodcutting
+          <p class="p-hint">Experience gain is divided by their respective value</p>
+          <li>Experience modifier: <span class="p-oldchange">1.0</span>
+          <span class="p-newchange">--> 0.5</span></li>
+        </ul>
+        <hr>
+        <ul class="ul-changelist">
+          Fishing
+          <li>Experience modifier: <span class="p-oldchange">1.0</span>
+          <span class="p-newchange">--> 0.5</span></li>
+        </ul>
+      </section>
     </section>
   </main>
   <footer></footer>
