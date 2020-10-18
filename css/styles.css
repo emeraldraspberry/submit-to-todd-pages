@@ -297,3 +297,10 @@ a:visited:hover {
   width: 100%;
   text-align: center;
 }
+.img-recipe {
+  border: 0.1rem solid #000;
+  background-color: #602;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 50%;
+}
