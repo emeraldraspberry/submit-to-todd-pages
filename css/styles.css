@@ -165,6 +165,7 @@ nav > a:visited {
 }
 nav > a:link {
   text-decoration: none;
+  color: #FFF;
 }
 nav > a:hover {
   background-color: #980;
