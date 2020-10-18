@@ -211,6 +211,10 @@ a:visited:hover {
   font-weight: bold;
   text-shadow: 0.25rem 0.125rem 0.75rem black;
 }
+.p-title ~ section {
+  background: linear-gradient(135deg, rgba(68, 0, 17, 0.5),90%,
+   rgba(68, 0, 17, 0.75));
+}
 .p-lessertitle {
   color: #FFE;
   font-size: 1.5rem;
@@ -301,7 +305,8 @@ a:visited:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: stretch;
-  background-color: #4017;
+  background: linear-gradient(135deg, rgba(68, 0, 17, 0.5),90%,
+   rgba(68, 0, 17, 0.75));
   margin: 1rem 0.25rem 1rem 0.25rem;
   padding: 1rem;
   flex-grow: 1;
