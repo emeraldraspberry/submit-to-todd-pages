@@ -19,11 +19,16 @@ $.get('../patch_notes.html', null, data => {
       let div = $(elem).contents().filter(subtitle).nextUntil(':not(section)')
       .children('div');
 
-      // Set up unique div container for layout
-      container.append($('<div>', {id: x}));
+      // Check for div content, set up unique div container for layout if true
+      if (div.text() !== "") {
+        container.append($('<div>', {id: x}));
       // Append the element at the end. Appending early will mess traversal.
       container.children('div#' + x).append(subtitle);
       container.children('div#' + x).append(div);
+      } else {
+        // Continue
+      }
+      
     });
 
     return false;
