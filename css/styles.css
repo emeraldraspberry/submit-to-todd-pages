@@ -260,8 +260,8 @@ a:visited:hover {
   align-items: stretch;
   flex-wrap: wrap;
 }
-#home-container > section {
-  width: 40rem;
+#home-container > section, #patch-notes-link {
+  width: 600px;
 }
 #patch-notes-summary {
   width: 100%;
@@ -296,6 +296,27 @@ a:visited:hover {
 #patch-notes-summary > .p-title {
   width: 100%;
   text-align: center;
+}
+#patch-notes-link {
+  display: block;
+  text-decoration: none;
+  font-size: 0;
+  margin: 1rem;
+  padding: 0rem 2rem 0rem 2rem;
+  color: #FFF;
+
+  border: 0.1rem;
+  border-radius: 0.33rem;
+  border-style: solid;
+  border-color: black;
+}
+#patch-notes-link:visited {
+  color: #FFF;
+}
+#patch-notes-link > section {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 .img-recipe {
   border: 0.1rem solid #000;
