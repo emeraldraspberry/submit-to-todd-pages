@@ -1,4 +1,4 @@
-$.get('../patch_notes.html', null, data => {
+$.get('./patch_notes.html', null, data => {
   let main = $(data).filter('main');
   $(main).children('section').each((x, elem) => {
     let title = $(elem).children('.p-title');
