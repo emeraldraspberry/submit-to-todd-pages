@@ -99,6 +99,9 @@ section {
   border-style: solid;
   border-color: black;
 }
+section > section > a {
+  color: #FFF;
+}
 section > div {
   display: flex;
   justify-content: left;
@@ -214,6 +217,11 @@ a:visited:hover {
 .p-title ~ section {
   background: linear-gradient(135deg, rgba(68, 0, 17, 0.5),90%,
    rgba(68, 0, 17, 0.75));
+  transition: transform, 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.p-title ~ section:hover {
+  transform: scale(1.125, 1.125);
 }
 .p-lessertitle {
   color: #FFE;
@@ -353,8 +361,24 @@ a:visited:hover {
 }
 .img-recipe {
   border: 0.1rem solid #000;
-  background-color: #602;
-  padding: 1rem;
   margin: 1rem;
   max-width: 50%;
+}
+.container-img-text-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: stretch;
+}
+.container-img-text-wrap > figure {
+  max-width: 50%;
+  min-width: 350px;
+}
+.container-img-text-wrap img {
+  max-width: 50%;
+  min-width: 350px;
+}
+.container-img-text-wrap > div {
+  max-width: fit-content;
 }
