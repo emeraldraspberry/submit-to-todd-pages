@@ -217,11 +217,12 @@ a:visited:hover {
 .p-title ~ section {
   background: linear-gradient(135deg, rgba(68, 0, 17, 0.5),90%,
    rgba(68, 0, 17, 0.75));
-  transition: transform, 0.5s;
+  transition: transform, background-color, 0.5s;
   transition-timing-function: ease-in-out;
 }
 .p-title ~ section:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.05, 1.05);
+  background-color: #401;
 }
 .p-lessertitle {
   color: #FFE;
