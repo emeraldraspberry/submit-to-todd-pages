@@ -4,15 +4,6 @@
   src: url(../font/mononoki-Regular.woff);
 }
 
-@media only screen and (max-width: 900px) {
-  main, header, nav {
-    width: 100%!important;
-  }
-  nav {
-    font-size: calc(0.5vw + 0.66rem);
-  }
-}
-
 html {
   box-sizing: border-box;
   width: 100%;
@@ -382,4 +373,30 @@ a:visited:hover {
 }
 .container-img-text-wrap > div {
   max-width: fit-content;
+}
+
+@media only screen and (max-width: 900px) {
+  main, header, nav {
+    width: 100%;
+  }
+  header > h1:first-of-type {
+    font-size: 2rem;
+  }
+  header > h2:last-of-type {
+    font-size: 1.333rem;
+  }
+  nav {
+    position: static;
+    
+    flex-direction: column;
+    align-items: stretch;
+    font-size: calc(0.25vw + 16px);
+    backdrop-filter: none;
+  }
+  nav > * {
+    flex-grow: 1;;
+  }
+  nav > a {
+    width: 100%
+  }
 }
